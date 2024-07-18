@@ -1,15 +1,53 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
 
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
 
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-store"></i>
+                <h1>Store</h1>
+            </div>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <span> outfit of the day </span>
+            <h3>all your </h3>
+            <h1> style are here </h1>
+            <p>Shop Your Everyday Classics — Get The Best Of Fashion From Your Favourite Brands On Myntra At Great Deals & Discounts.<br>
+                Shoppable Looks From India's Top Influencers At Myntra Studio.<br> Hurry Up And Shop Now. OMG Deals. Premium Brands. </p>
+            <a href="#" class="btn">buy now</a>
+        </div>
+        <div class="div-img">
+            <img src="img/jeans1.jpg" alt="">
+        </div>
+        <div class="small-img">
+            <img onclick="myTshirt(this.src)" src="img/shirts3.jpg" alt="">
+            <img onclick="myTshirt(this.src)" src="img/tshrits2.jpg" alt="">
+            <img onclick="myTshirt(this.src)" src="img/usplol2.jpg" alt="">
+        </div>
+    </div>
 
-<!-- TODO 4: Add titles/subtitles etc. -->
+    <script>
+        let bigImage = document.getElementById('bigImage');
 
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
+        function myTshirt(shirt) {
+            bigImage.src = shirt;
+        }
+    </script>
+</body>
+</html>
