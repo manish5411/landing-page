@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store</title>
-
+    <title>FASHION.POLO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-
         <nav>
             <div class="logo">
-                <i class="fa-solid fa-store"></i>
-                <h1>Store</h1>
+                <i class="fa-solid fa-feather-pointed"></i>
+                <h1>FASHION.POLO</h1>
             </div>
             <ul>
                 <li class="active"><a href="#">Home</a></li>
@@ -25,20 +23,25 @@
             </ul>
         </nav>
         <div class="content">
-            <span> outfit of the day </span>
-            <h3>all your </h3>
-            <h1> style are here </h1>
-            <p>Shop Your Everyday Classics — Get The Best Of Fashion From Your Favourite Brands On Myntra At Great Deals & Discounts.<br>
-                Shoppable Looks From India's Top Influencers At Myntra Studio.<br> Hurry Up And Shop Now. OMG Deals. Premium Brands. </p>
-            <a href="#" class="btn">buy now</a>
-        </div>
-        <div class="div-img">
-            <img src="img/jeans1.jpg" alt="">
-        </div>
-        <div class="small-img">
-            <img onclick="myTshirt(this.src)" src="img/shirts3.jpg" alt="">
-            <img onclick="myTshirt(this.src)" src="img/tshrits2.jpg" alt="">
-            <img onclick="myTshirt(this.src)" src="img/usplol2.jpg" alt="">
+            <div class="text-content">
+                <span>outfit of the day</span>
+                <h3>all your</h3>
+                <h1>style are here</h1>
+                <p>Shop Your Everyday Classics — Get The Best Of Fashion From Your Favourite Brands On FASHION.POLO At Great Deals & Discounts.
+                    Shoppable Looks From India's Top Influencers At fashion flow Studio.<br> Hurry Up And Shop Now. OMG Deals. Premium Brands.<br> </p>
+                <a href="#" class="btn">buy now</a>
+            </div>
+            <div class="div-img">
+               <img id="big-Image" src="img/fullsett.png" alt="">
+    
+            </div>
+            <div class="small-img">
+                <img oneclick="myTshirt(this.src)" src="img/WHITETSHIRT.png" alt="">
+                <img oneclick="myTshirt(this.src)" src="img/BLKSHOES.png" alt="">
+                <img oneclick="myTshirt(this.src)" src="img/ORANGETSHIRT.png" alt="">
+                <img oneclick="myTshirt(this.src)" src="img/GREENUSPA.png" alt="">
+                <img oneclick="myTshirt(this.src)" src="img/BROWNSHOES.png" alt="">
+            </div>
         </div>
     </div>
 
@@ -46,8 +49,8 @@
         let bigImage = document.getElementById('bigImage');
 
         function myTshirt(shirt) {
-            bigImage.src = shirt;
+            bigImage.src = shirt
         }
     </script>
 </body>
-</html>
+</html
